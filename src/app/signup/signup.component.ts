@@ -8,7 +8,7 @@ import { fadeInAnimation } from '../_animation/index';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.css'],
+  styleUrls: ['./signup.component.css', '../../assets/stylesheets/form.css', '../../assets/stylesheets/static.css'],
   animations: [fadeInAnimation],
   host:{'[@fadeInAnimation':''}
 })

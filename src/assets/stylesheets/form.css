@@ -1,32 +1,3 @@
-#content-wrapper {
-    width: 100%;
-    height: calc(100% - 60px);
-    display: table;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-#content-wrapper a.logo {
-    font-size: 50px;
-    color: #777;
-    margin-bottom: 30px;
-    display: block;
-}
-
-#content-wrapper a.logo b {
-    color: #43abf1;
-}
-
-#content-wrapper a.logo:hover,
-#content-wrapper a.logo:focus {
-    text-decoration: none;
-}
-
-#content-wrapper .login-wrapper {
-    display: table-cell;
-    vertical-align: middle;
-}
-
 .login-form {
     max-width: 560px;
     margin: 0 auto;
@@ -40,7 +11,7 @@
 
 .login-form .submit-btn {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
     padding: 16px;
     margin-top: 20px;
 }
@@ -79,6 +50,7 @@
 }
 
 .input-lg {
+    margin-bottom: 10px;
     border-radius: 0 !important;
 }
 

@@ -10,7 +10,7 @@ import { FacebookService, LoginResponse, LoginOptions, UIResponse, UIParams, FBV
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css'],
+  styleUrls: ['./login.component.css', '../../assets/stylesheets/form.css', '../../assets/stylesheets/static.css'],
   animations: [fadeInAnimation],
   host:{'[@fadeInAnimation':''}
 })
