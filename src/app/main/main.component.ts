@@ -12,7 +12,7 @@ declare const $ : any;
   moduleId: module.id.toString(),
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css'],
+  styleUrls: ['./main.component.css', '../../assets/stylesheets/static.css'],
   animations: [fadeInAnimation],
   host:{'[@fadeInAnimation':''}
 })
@@ -21,7 +21,7 @@ export class MainComponent implements OnInit {
   constructor(private vote:VoteService) { }
 
   ngOnInit() {
-    $('.top-content').particleground({
+    $('#particle-background').particleground({
             dotColor: '#CFD8DC',
             lineColor: '#CFD8DC',
             directionX: 'center'
