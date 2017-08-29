@@ -44,6 +44,7 @@ app-header {
 }
 
 .navbar-default {
+    margin-bottom: 0px;
     box-shadow: none;
     background-color: transparent;
     position: absolute;
@@ -120,8 +121,11 @@ app-header {
 }
 
 .navbar {
+    margin-bottom: 0px;
     z-index: 9999;
     background-color: #FFF;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .navbar-toggle:hover {
@@ -130,4 +134,137 @@ app-header {
 
 .navbar-brand {
     color: #00B0FF;
+}
+
+@import url('http://fonts.googleapis.com/earlyaccess/nanumpenscript.css');
+html,
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+    height: 100%;
+}
+
+.form-control {
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+.form-control:focus {
+    -webkit-box-shadow: 0 0 3px 0 rgba(63, 116, 224, 0.5);
+    -moz-box-shadow: 0 0 3px rgba(63, 116, 224, 0.5);
+    box-shadow: 0 0 3px 0 rgba(63, 116, 224, 0.5);
+    border-color: #43aaf1;
+}
+
+.input-group-addon {
+    background: #fff;
+}
+
+.btn {
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+a {
+    color: #43aaf1;
+}
+
+a:hover,
+a:active {
+    color: #399ce0;
+}
+
+.btn-primary {
+    background-color: #43aaf1;
+    border-color: #399ce0;
+}
+
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.open>.dropdown-toggle.btn-primary {
+    background-color: #399ce0;
+    border-color: #399ce0;
+}
+
+.btn-primary-outline {
+    background-color: transparent;
+    border: 1px solid #43aaf1;
+    color: #43aaf1;
+}
+
+.btn-primary-outline.active,
+.btn-primary-outline.focus,
+.btn-primary-outline:active,
+.btn-primary-outline:focus,
+.btn-primary-outline:hover,
+.open>.dropdown-toggle.btn-primary-outline {
+    background-color: #edf2fd;
+    color: #43aaf1;
+}
+
+.button-group-vertical input {
+    border-radius: 0;
+    border-bottom-width: 0;
+}
+
+.button-group-vertical input:focus {
+    border-bottom-width: 1px;
+}
+
+.button-group-vertical input:first-of-type {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.button-group-vertical input:last-of-type {
+    border-bottom-width: 1px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.navbar-default {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 5px 0;
+    border: 0;
+}
+
+.navbar-default .navbar-brand>b {
+    color: #43aaf1;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: transparent;
+    font-weight: 500;
+    color: #43aaf1;
+}
+
+.navbar-default .navbar-nav>li>a.btn {
+    padding: 8px 15px;
+    margin: 6px;
+}
+
+.navbar-default .navbar-nav>li>a.btn-primary {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a.btn-primary:focus,
+.navbar-default .navbar-nav>li>a.btn-primary:hover {
+    background-color: #399ce0;
+}
+
+.navbar-default .navbar-nav>li>a.btn-primary-outline {
+    color: #43aaf1;
+}
+
+.navbar-default .navbar-nav>li>a.btn-primary-outline:focus,
+.navbar-default .navbar-nav>li>a.btn-primary-outline:hover {
+    background-color: #edf2fd;
 }
