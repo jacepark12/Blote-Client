@@ -6,11 +6,11 @@ import { VoteService } from '../service/vote.service';
 import { CookieService } from '../service/cookie.service';
 
 @Component({
-  selector: 'app-survey',
-  templateUrl: './survey.component.html',
-  styleUrls: ['./survey.component.css']
+  selector: 'app-vote',
+  templateUrl: './vote.component.html',
+  styleUrls: ['./vote.component.css']
 })
-export class SurveyComponent implements OnInit {
+export class voteComponent implements OnInit {
 
   email: String;
   code:String;

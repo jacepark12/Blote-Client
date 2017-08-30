@@ -21,7 +21,7 @@ import { VoteService } from './service/vote.service';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AboutComponent } from './about/about.component';
-import { SurveyComponent } from './survey/survey.component';
+import { voteComponent } from './vote/vote.component';
 import { CreateComponent } from './create/create.component';
 
 //Animation Part
@@ -46,7 +46,7 @@ import { SimpleComponent } from './simple/simple.component';
     LoginComponent,
     SignupComponent,
     AboutComponent,
-    SurveyComponent,
+    voteComponent,
     CreateComponent,
     FullComponent,
     SimpleComponent

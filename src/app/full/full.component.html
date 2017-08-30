@@ -16,7 +16,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li [routerLinkActive]="['active']" *ngIf="!loggedIn"><a class="btn btn-primary-outline" href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i>로그인</a></li>
                 <li [routerLinkActive]="['active']" *ngIf="!loggedIn"><a class="btn btn-primary-outline" href="/signup"><i class="fa fa-sign-in" aria-hidden="true"></i>회원가입</a></li>
-                <li [routerLinkActive]="['active']" *ngIf="loggedIn"><a class="btn btn-primary-outline" href="/survey/create"><i class="fa fa-sign-in" aria-hidden="true"></i>새로운 투표 만들기</a></li>
+                <li [routerLinkActive]="['active']" *ngIf="loggedIn"><a class="btn btn-primary-outline" href="/vote/create"><i class="fa fa-sign-in" aria-hidden="true"></i>새로운 투표 만들기</a></li>
                 <li [routerLinkActive]="['active']" *ngIf="loggedIn" (click)="logout()"><a class="btn btn-primary-outline" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>로그아웃</a></li>
             </ul>
         </div>

@@ -5,7 +5,7 @@ import {MainComponent} from './main/main.component';
 import {LoginComponent} from './login/login.component';
 import {SignupComponent} from './signup/signup.component';
 import {AboutComponent} from './about/about.component';
-import {SurveyComponent} from './survey/survey.component';
+import {voteComponent} from './vote/vote.component';
 import {MonitorComponent} from './monitor/monitor.component';
 import {ResultComponent} from './result/result.component';
 import {CreateComponent} from './create/create.component';
@@ -45,14 +45,14 @@ export const router: Routes = [
         ]
     },
     {
-        path: 'survey', component: SimpleComponent,
+        path: 'vote', component: SimpleComponent,
         children: [
             {
                 path: 'create', component: CreateComponent,
                 canActivate:[AuthGuard]
             },
             {
-                path:'', component:SurveyComponent
+                path:'', component:voteComponent
             }
         ]
     }
