@@ -1,24 +1,11 @@
 <div id="content-wrapper">
     <section id="introduce" class="content-section">
         <div id="particle-background">
-            <div class="content">
-                <div class="container">
-                    <!-- <div class="row">
-                    <div class="col-xs-12 col-md-6 text-right">
-                        <h1>생활 속 아이디어<br><b>‘나도 기업왕’</b>온라인 게임</h1>
-                    </div>
-                    <div class="col-xs-12 col-md-6 text-center">
-                        <img src="./assets/img/bizcool_logo.png">
-                    </div>
-                </div> -->
-
-                    <div class="ui stackable two column grid container top-content-grid">
-                        <div class="column intro-column">
-                            <div class="intro-column-wrapper">
-                                <h1 class="title"><b>더욱 더 안전한, 투명한, 전자투표 시스템</b><br><span class="typing-text"></span></h1>
-                                <button class="btn-1" (click)="about()"><i class="arrow right icon"></i> 지금 한 눈에 보기</button>
-                            </div>
-                        </div>
+            <div class="ui stackable two column grid container top-content-grid">
+                <div class="column intro-column">
+                    <div class="intro-column-wrapper">
+                        <h1 class="title"><b>더욱 더 안전한, 투명한, 전자투표 시스템</b><br><span class="typing-text"></span></h1>
+                        <button class="btn-1" (click)="about()"><i class="arrow right icon"></i> 지금 한 눈에 보기</button>
                     </div>
                 </div>
             </div>
@@ -33,8 +20,8 @@
                         <img src="./assets/img/invest_screenshot.png">
                     </div>
                     <div class="col-xs-12 col-md-6">
-                        <h1>1단계 <b>아이디어왕 선정</b></h1>
-                        <p>각 팀에게 발급된 주소로 접속해 다른 팀에게 투자를 하고<br>그 투자들을 모아 아이디어왕을 선정합니다.</p>
+                        <h1><b>블록체인</b>에 저장되는 투표 데이터</h1>
+                        <p><b>Blote</b>에서는 투표 데이터가 중앙서버에 저장되지 않습니다.<br>블록체인 네트워크에 분산 저장되며, 이를 통해 안전성과 투명성을 확보 할 수 있습니다.</p>
                     </div>
                 </div>
             </div>
@@ -45,8 +32,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-6 text-right">
-                        <h1>2단계 <b>투자왕 선정</b></h1>
-                        <p>100억을 가장 효율적으로 투자한 팀이<br>투자왕에 선정됩니다.</p>
+                        <h1>투표자가 <b>모니터링 가능한</b>투표</h1>
+                        <p>투표 데이터가 저장되는 블록 해시를 통해 <br>투표자가 직접 유효성을 검증할 수 있습니다.</p>
                     </div>
                     <div class="col-xs-12 col-md-6 text-center">
                         <img src="http://bizcool.me/assets/img/company_king_screenshot.png">
@@ -58,13 +45,37 @@
     <section id="introduce4" class="content-section">
         <div class="content">
             <div class="container">
+                <div class="row" style="text-align: center">
+                    <h1><b>Blote</b>사용하기!</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="introduce5" class="content-section">
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 text-right">
+                        <h1>1단계 <b>회원가입</b></h1>
+                        <p>자치회 운영, 대회, 해카톤 운영 등 투명성과 공신력이 보장되어야 하는 투표가 필요하다면 Blote에 가입합니다.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 text-center">
+                        <img src="../assets/images/signup.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="introduce5" class="content-section">
+        <div class="content">
+            <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-6 text-center">
-                        <img src="http://bizcool.me/assets/img/company_king_screenshot.png">
+                        <img src="../assets/images/create.png">
                     </div>
-                    <div class="col-xs-12 col-md-6">
-                        <h1>3단계 <b>홍보왕 선정</b></h1>
-                        <p>발표를 잘한 두팀을 선정해 투표하고<br>그 투표결과를 통해 홍보왕을 선정합니다.</p>
+                    <div class="col-xs-12 col-md-6 text-right">
+                        <h1>2단계 <b>투표 생성</b></h1>
+                        <p>후보 등록, 투표 가능한 인원 수를 지정하고 투표를 생성합니다. 생성이후에 제공되는 url를 투표 참가자들에게 공개합니다.</p>
                     </div>
                 </div>
             </div>
@@ -75,64 +86,31 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-6 text-right">
-                        <h1>3단계 <b>최종 기업왕 선정</b></h1>
-                        <p>아이디어왕, 투자왕, 홍보왕을 모두 선정 한 후<br>상금과 배당금을 합산해 기업왕을 선정합니다.</p>
+                        <h1>3단계 <b>투표 진행</b></h1>
+                        <p>투표 참가자들은 제공된 url을 통해 투표를 진행합니다.</p>
                     </div>
                     <div class="col-xs-12 col-md-6 text-center">
-                        <img src="http://bizcool.me/assets/img/company_king_screenshot.png">
+                        <img src="../assets/images/vote.png">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="introduce6" class="content-section">
+
+    <section id="introduce4" class="content-section">
         <div class="content">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 text-center">
-                        <img src="./assets/img/1.jpg">
-                        <img src="./assets/img/2.jpg">
+                <div class="col-xs-12 col-md-6 text-right">
+                    <div class="row" style="text-align: center">
+                        <h1><b>Blote</b>가 더 궁금하다면?</h1>
+                    </div>
+                    <div class="col-xs-12 col-md-6 text-center">
+                        <button class="btn-1" (click)="about()"><i class="arrow right icon"></i> 지금 알아보기</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer id="footer-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="footer-content col-xs-5">
-                    <p>경기도 안산시 단원구 와동 사세충열로 94 한국디지털미디어고등학교</p>
-                    <p>운영, 저작자 : 남승완 / 기술개발 : 박재성 김준호</p>
-                    <p><b>Copyright 2017. 남승완, bizcool.me. All rights reserved.</b></p>
-                </div>
-                <div class="footer-menus col-xs-offset-2 col-xs-4">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <ul class="list-unstyled">
-                                <li><a href="#">이용약관</a></li>
-                                <li><a href="#">개인정보처리방침</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <ul class="list-unstyled">
-                                <li><a href="#">이용약관</a></li>
-                                <li><a href="#">개인정보처리방침</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="sns-links col-xs-1">
-                    <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12" style="text-align: center; padding: 20px 0;">
-                    <p><b>이 게임은 저작권법에 의해 보호를 받습니다. 저작자의 사전 동의 없이 무단 사용 시 법적 책임을 지게 될 수 있습니다.</b></p>
-                </div>
-            </div>
-        </div>
-    </footer>
 </div>
 <!-- <section class="top-content">
     <div class="top-content-grid-wrapper">
