@@ -48,7 +48,8 @@ export const router: Routes = [
         path: 'survey', component: SimpleComponent,
         children: [
             {
-                path: 'create', component: CreateComponent
+                path: 'create', component: CreateComponent,
+                canActivate:[AuthGuard]
             },
             {
                 path:'', component:SurveyComponent
