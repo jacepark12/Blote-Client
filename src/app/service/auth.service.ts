@@ -10,8 +10,6 @@ import * as web3 from 'Web3';
 
 import { FacebookService, InitParams, LoginResponse, LoginOptions } from 'ngx-facebook';
 
-
-
 @Injectable()
 export class AuthService {
 
@@ -108,7 +106,7 @@ export class AuthService {
 
         let isValid: boolean = true;
 
-        var token = this.cookie.getCookie('type');
+        var token = this.cookie.getCookie('id_token');
         
         if (token) {
             console.log("sessionLoggedIn");
