@@ -16,4 +16,8 @@ export class FullComponent implements OnInit {
       this.loggedIn = this.auth.loggedIn();
       console.log('loggedIn : ', this.loggedIn);
     }
+
+    logout(){
+      this.auth.logout();
+    }
 }

@@ -121,12 +121,12 @@ export class AuthService {
     }
 
     logout() {
-        alert("로그아웃 되었습니다.");
-        location.href = '/';
-
         this.cookie.delete_cookie('id_token');
         this.cookie.delete_cookie('type');
         this.cookie.delete_cookie('user_id');
+
+        alert("로그아웃 되었습니다.");
+        location.href = '/';
     }
 
     private handleError(error) {
