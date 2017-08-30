@@ -7,12 +7,14 @@ import { CookieService } from './cookie.service';
 import 'rxjs/add/operator/map';
 
 import * as web3 from 'Web3';
+import {API} from './api-util';
 
 import { FacebookService, InitParams, LoginResponse, LoginOptions } from 'ngx-facebook';
 
 @Injectable()
 export class AuthService {
 
+    baseURL = API.baseURL;
     constructor(private http: Http, private router: Router, private cookie: CookieService, private fb: FacebookService) {
         fb.init({
             appId: '109089776436251',
@@ -33,16 +35,14 @@ export class AuthService {
     }
 
     signup(name: String, email: String, pwd: String, org: String) {
-        let url = "http://dudgns05072.cafe24.com:3000/users/signup";
+        let url = API.baseURL + "users/signup";
         let body = {
             "name": name,
             "id": email,
             "pw": pwd,
             "org": org
         }
-        let headers = new Headers({
-            'Content-Type': 'application/json'
-        });
+        let headers = API.baseHeader;
 
         let options = new RequestOptions({
             headers: headers
@@ -68,14 +68,12 @@ export class AuthService {
     }
 
     login(email: String, pwd: String) {
-        let url = "http://dudgns05072.cafe24.com:3000/users/signin";
+        let url = API.baseURL + "users/signin";
         let body = {
             "id": email,
             "pw": pwd
         }
-        let headers = new Headers({
-            'Content-Type': 'application/json'
-        });
+        let headers = API.baseHeader;
 
         let options = new RequestOptions({
             headers: headers
@@ -102,22 +100,12 @@ export class AuthService {
 
 
     loggedIn() {
-        console.log('checking token!!');
 
-        let isValid: boolean = true;
-
-        var token = this.cookie.getCookie('id_token');
-        
-        if (token) {
-            console.log("sessionLoggedIn");
+        if(this.cookie.getCookie('id_token')){
+            return true;
+        }else{
+            return false;
         }
-
-        //token not found
-        else {
-            console.log("no login");
-            isValid = false;
-        }
-        return isValid;
     }
 
     logout() {
